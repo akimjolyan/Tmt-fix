@@ -1,0 +1,24 @@
+{
+  "name": "tmt-backend",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "dev:api": "node --watch src/server.js",
+    "dev:consumer": "node src/searchConsumer.js",
+    "start": "node src/server.js",
+    "seed": "node src/seed.js",
+    "search:reindex": "node src/reindexSearch.js"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "kafkajs": "^2.2.4",
+    "multer": "^2.0.2",
+    "pg": "^8.14.1",
+    "slugify": "^1.6.6"
+  }
+}
